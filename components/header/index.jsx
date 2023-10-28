@@ -6,7 +6,10 @@ import { Container, Box } from "@chakra-ui/react";
 export default function Header() {
   return (
     <Container
+      zIndex="1"
       maxWidth="100vw"
+      position="fixed"
+      backgroundColor="#fff"
       borderBottom="1px solid #f3f3f3"
     >
       <Box
