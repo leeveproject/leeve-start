@@ -1,3 +1,10 @@
+import React from "react";
+import Header from "@/components/header";
+
 export default function Home() {
-  return <h1>hello, next.js!</h1>
+  return (
+    <React.Fragment>
+      <Header />
+    </React.Fragment>
+  )
 }
