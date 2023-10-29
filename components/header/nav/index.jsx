@@ -16,11 +16,11 @@ export function NavBar() {
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink><a href="">Services</a></BreadcrumbLink>
+          <BreadcrumbLink><a href="#services">Services</a></BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink><a href="">App</a></BreadcrumbLink>
+          <BreadcrumbLink><a href="#app">App</a></BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>

@@ -41,7 +41,9 @@ export default function firstSection() {
                 simples e planejada.
               </Text>
             </Box>
-            <Box>
+            <Box
+              marginTop="20px"
+            >
               <ButtonAcess
                 content="Saiba mais"
               />
