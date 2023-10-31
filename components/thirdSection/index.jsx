@@ -5,19 +5,19 @@ export default function ThirdSection() {
   return (
     <section id="app">
       <Container
-        height="730px"
         maxWidth="100vw"
         backgroundColor="#115126"
+        height={["300px", "500px", "500px", "630px", "730px"]}
       >
         <Box
-          display="flex"
           margin="0 auto"
           maxWidth="1500px"
           justifyContent="space-evenly"
+          display={["block", "block", "flex", "flex"]}
         >
           <Box
-            width="70%"
             marginTop="50px"
+            width={["100%", "100%", "70%", "70%"]}
           >
             <Image
               width="900"
@@ -28,6 +28,8 @@ export default function ThirdSection() {
           </Box>
           <Box
             width="30%"
+
+            display={["none", "none", "flex", "flex"]}
           >
             <Image
               width="500"
