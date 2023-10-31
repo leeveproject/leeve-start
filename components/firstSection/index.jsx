@@ -7,17 +7,17 @@ export default function firstSection() {
     <section id="home">
       <Container
         maxWidth="100vw"
-        paddingTop="90px"
+        paddingTop={["20px", "20px", "90px", "90px"]}
       >
         <Box
-          display="flex"
           margin="0 auto"
           maxWidth="1500px"
+          display={["block", "block", "flex", "flex"]}
         >
           <Box
-            width="40%"
-            height="800px"
+            height={[400, 400, 600, 800]}
             backgroundColor="#56cf7e84"
+            width={["100%", "100%", "40%", "40%"]}
           >
             <Box
               margin="80px 10px 0px 10px"
@@ -25,8 +25,8 @@ export default function firstSection() {
             >
               <Box>
                 <Text
-                  fontSize="6xl"
                   color="#351b15"
+                  fontSize={["5xl", "5xl", "5xl", "6xl"]}
                 >
                   O App que <br />
                   facilita sua <br />
@@ -35,8 +35,8 @@ export default function firstSection() {
               </Box>
               <Box>
                 <Text
-                  fontSize="3xl"
                   color="#351b15"
+                  fontSize={["1xl", "1xl", "2xl", "3xl"]}
                 >
                   Gerencie seu empreendimento de forma <br />
                   simples e planejada.
@@ -52,10 +52,11 @@ export default function firstSection() {
             </Box>
           </Box>
           <Box
-            width="60%"
+            width={["100%", "100%", "60%", "60%"]}
           >
             <Box
               marginTop="50px"
+              marginBottom={["150px", "0px", "0px", "0px"]}
             >
               <Image
                 width="900"
