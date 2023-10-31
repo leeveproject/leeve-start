@@ -64,7 +64,7 @@ export default function FourthSection() {
                     width="100%"
                     color="#fff"
                     marginTop="10px"
-                    backgroundColor="#56cf7e"
+                    colorScheme="green"
                   >
                     Receber
                   </Button>
