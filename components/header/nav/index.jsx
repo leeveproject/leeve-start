@@ -24,7 +24,7 @@ export function NavBar() {
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink><a href="">Links</a></BreadcrumbLink>
+          <BreadcrumbLink><a href="#email">Email</a></BreadcrumbLink>
         </BreadcrumbItem>
 
       </Breadcrumb>
