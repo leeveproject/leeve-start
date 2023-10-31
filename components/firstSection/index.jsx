@@ -4,67 +4,69 @@ import { Box, Container, Text } from "@chakra-ui/react";
 
 export default function firstSection() {
   return (
-    <Container
-      maxWidth="100vw"
-      paddingTop="90px"
-    >
-      <Box
-        display="flex"
-        margin="0 auto"
-        maxWidth="1500px"
+    <section id="home">
+      <Container
+        maxWidth="100vw"
+        paddingTop="90px"
       >
         <Box
-          width="40%"
-          height="750px"
-          backgroundColor="#56cf7e84"
+          display="flex"
+          margin="0 auto"
+          maxWidth="1500px"
         >
           <Box
-            margin="80px 10px 0px 10px"
-
+            width="40%"
+            height="800px"
+            backgroundColor="#56cf7e84"
           >
-            <Box>
-              <Text
-                fontSize="6xl"
-                color="#351b15"
-              >
-                O App que <br />
-                facilita sua <br />
-                rotina.
-              </Text>
-            </Box>
-            <Box>
-              <Text
-                fontSize="3xl"
-                color="#351b15"
-              >
-                Gerencie seu empreendimento de forma <br />
-                simples e planejada.
-              </Text>
-            </Box>
             <Box
-              marginTop="20px"
+              margin="80px 10px 0px 10px"
+
             >
-              <ButtonAcess
-                content="Saiba mais"
+              <Box>
+                <Text
+                  fontSize="6xl"
+                  color="#351b15"
+                >
+                  O App que <br />
+                  facilita sua <br />
+                  rotina.
+                </Text>
+              </Box>
+              <Box>
+                <Text
+                  fontSize="3xl"
+                  color="#351b15"
+                >
+                  Gerencie seu empreendimento de forma <br />
+                  simples e planejada.
+                </Text>
+              </Box>
+              <Box
+                marginTop="20px"
+              >
+                <ButtonAcess
+                  content="Saiba mais"
+                />
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            width="60%"
+          >
+            <Box
+              marginTop="50px"
+            >
+              <Image
+                width="900"
+                height="900"
+                src="/image/mac.image.svg"
+                alt="image"
               />
             </Box>
           </Box>
         </Box>
-        <Box
-          width="60%"
-        >
-          <Box
-            marginTop="50px"
-          >
-            <Image
-              width="900"
-              height="900"
-              src="/image/mac.image.svg"
-              alt="image"
-            />
-          </Box>
-        </Box>
-      </Box>
-    </Container>
+      </Container>
+    </section>
   )
 }

@@ -5,44 +5,46 @@ import { Container, Box } from "@chakra-ui/react";
 
 export default function Header() {
   return (
-    <Container
-      zIndex="1"
-      maxWidth="100vw"
-      position="fixed"
-      backgroundColor="#fff"
-      borderBottom="1px solid #f3f3f3"
-    >
-      <Box
-        margin="0 auto"
-        maxWidth="1500px"
+    <header id="header">
+      <Container
+        zIndex="1"
+        maxWidth="100vw"
+        position="fixed"
+        backgroundColor="#fff"
+        borderBottom="1px solid #f3f3f3"
       >
         <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
+          margin="0 auto"
+          maxWidth="1500px"
         >
           <Box
-            marginTop="5px"
-            marginBottom="5px"
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
           >
-            <Image
-              width="80"
-              height="80"
-              src="/logo/image.svg"
-              alt="image"
-            />
-          </Box>
-          <Box>
+            <Box
+              marginTop="5px"
+              marginBottom="5px"
+            >
+              <Image
+                width="80"
+                height="80"
+                src="/logo/image.svg"
+                alt="image"
+              />
+            </Box>
+            <Box>
 
-            <NavBar />
+              <NavBar />
 
-          </Box>
-          <Box>
-            <ButtonAcess
-              content="Entrar" />
+            </Box>
+            <Box>
+              <ButtonAcess
+                content="Entrar" />
+            </Box>
           </Box>
         </Box>
-      </Box>
-    </Container>
+      </Container>
+    </header>
   )
 }

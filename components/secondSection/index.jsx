@@ -9,7 +9,7 @@ export default function SecondSection() {
       >
         <Box
           margin="0 auto"
-          height="700px"
+          height="800px"
           maxWidth="1500px"
         >
           <Box
