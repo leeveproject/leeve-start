@@ -7,7 +7,7 @@ import { Container, Box, Text } from "@chakra-ui/react";
 export default function FourthSection() {
   const { register, handleSubmit } = useForm();
 
-  function emailData(data) {
+  function handleEmail(data) {
     console.log(data)
   }
 
@@ -50,7 +50,7 @@ export default function FourthSection() {
             <Box
               marginTop="30px"
             >
-              <form onSubmit={handleSubmit(emailData)}>
+              <form onSubmit={handleSubmit(handleEmail)}>
                 <Box>
                   <Input
                     type="text"
