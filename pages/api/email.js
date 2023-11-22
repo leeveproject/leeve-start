@@ -1,7 +1,7 @@
 import { data } from "@/config";
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
+export default async function sendEmail(req, res) {
   const { email } = req.body;
 
   switch (req.method) {
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
       const mailOptions = {
         from: data.email.user,
         to: email,
-        subject: "test feature",
+        subject: "Conheça nosso sistema 🚀",
         text: "test"
       }
 

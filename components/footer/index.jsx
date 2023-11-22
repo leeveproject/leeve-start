@@ -42,11 +42,11 @@ export default function Footer() {
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#">Home</a>
                 </ListItem>
-                <ListItem >
+                <ListItem>
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#services">Services</a>
                 </ListItem>
-                <ListItem >
+                <ListItem>
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#app">App</a>
                 </ListItem>
