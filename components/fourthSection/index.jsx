@@ -24,18 +24,22 @@ export default function FourthSection() {
       return;
     }
 
-    try {
-      await axios.post("/api/email", { email })
-      toast({
-        title: "Enviado com sucesso",
-        description: "Verifique seu e-mail",
-        status: "success",
-        duration: 9000,
-        isClosable: true
-      })
-    } catch (error) {
-      console.log("erro na section: " + error)
+    if (email) {
+      try {
+        await axios.post("/api/email", { email })
+        toast({
+          title: "Enviado com sucesso",
+          description: "Verifique seu e-mail",
+          status: "success",
+          duration: 9000,
+          isClosable: true
+        })
+      } catch (error) {
+        console.log("erro na section: " + error)
+      }
     }
+
+    return;
   }
 
   return (
