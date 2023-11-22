@@ -2,16 +2,23 @@
 
 import axios from "axios";
 import { useState } from "react";
-import { Button, Input } from "@chakra-ui/react";
 import { Container, Box, Text } from "@chakra-ui/react";
+import { Button, Input, useToast } from "@chakra-ui/react";
 
 export default function FourthSection() {
+  const toast = useToast();
   const [email, setEmail] = useState("");
 
   async function handleEmail(e) {
     e.preventDefault()
     try {
       await axios.post("/api/email", { email })
+      toast({
+        title: "Enviado com sucesso",
+        status: "success",
+        duration: 9000,
+        isClosable: true
+      })
     } catch (error) {
       console.log("erro na section: " + error)
     }
