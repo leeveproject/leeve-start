@@ -34,16 +34,19 @@ export default function Footer() {
               />
             </Box>
             <Box>
-              <List spacing="3">
+              <List
+                gap="10px"
+                display={["block", "block", "flex", "flex"]}
+              >
                 <ListItem>
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#">Home</a>
                 </ListItem>
-                <ListItem>
+                <ListItem >
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#services">Services</a>
                 </ListItem>
-                <ListItem>
+                <ListItem >
                   <ListIcon as={CheckCircleIcon} color='green.500' />
                   <a href="#app">App</a>
                 </ListItem>

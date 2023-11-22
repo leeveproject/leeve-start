@@ -24,12 +24,12 @@ export default async function handler(req, res) {
 
       try {
         await transporter.sendMail(mailOptions)
-        res.status(200).json({ message: "email enviado com sucesso" })
+        res.status(200).json({ message: "email sent" })
       } catch (error) {
-        res.status(500).json({ error: 'Houve um erro ao enviar o e-mail.' })
+        res.status(500).json({ error: "error found when sending email" })
       }
 
     default:
-      res.status(500).json({ message: "metodo não encontrado" })
+      res.status(500).json({ message: "method not found" })
   }
 }
