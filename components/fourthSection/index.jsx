@@ -11,10 +11,24 @@ export default function FourthSection() {
 
   async function handleEmail(e) {
     e.preventDefault()
+
+    if (!email) {
+      toast({
+        title: "Insira seu e-mail",
+        description: "Campo de e-mail obrigatório",
+        status: "warning",
+        duration: 9000,
+        isClosable: true
+      })
+
+      return;
+    }
+
     try {
       await axios.post("/api/email", { email })
       toast({
         title: "Enviado com sucesso",
+        description: "Verifique seu e-mail",
         status: "success",
         duration: 9000,
         isClosable: true

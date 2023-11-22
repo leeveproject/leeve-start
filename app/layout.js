@@ -6,7 +6,6 @@ const inter = Inter({ subsets: ["latin"] })
 
 import "../styles/globals.css";
 
-
 export const metadata = {
   title: "Leeve - o aplicativo que facilita sua rotina.",
   description: "Te oferecemos um gerenciador virtual e personalizado disponível 24h para que você gerencie de forma simples seu negócio.",
