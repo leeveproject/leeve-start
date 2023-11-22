@@ -1,14 +1,20 @@
 "use client"
 
-import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useState } from "react";
 import { Button, Input } from "@chakra-ui/react";
 import { Container, Box, Text } from "@chakra-ui/react";
 
 export default function FourthSection() {
-  const { register, handleSubmit } = useForm();
+  const [email, setEmail] = useState("");
 
-  function handleEmail(data) {
-    console.log(data)
+  async function handleEmail(e) {
+    e.preventDefault()
+    try {
+      await axios.post("/api/email", { email })
+    } catch (error) {
+      console.log("erro na section: " + error)
+    }
   }
 
   return (
@@ -50,12 +56,13 @@ export default function FourthSection() {
             <Box
               marginTop="30px"
             >
-              <form onSubmit={handleSubmit(handleEmail)}>
+              <form onSubmit={handleEmail}>
                 <Box>
                   <Input
-                    type="text"
+                    type="email"
+                    value={email}
                     placeholder="Digite seu melhor email"
-                    {...register("email", { required: true })}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </Box>
                 <Box>
