@@ -1,5 +1,7 @@
 import { data } from "@/config";
 import nodemailer from "nodemailer";
+import { Email } from "@/components/email";
+import { render } from "@react-email/render";
 
 export default async function sendEmail(req, res) {
   const { email } = req.body;
@@ -15,11 +17,13 @@ export default async function sendEmail(req, res) {
         }
       })
 
+      const emailHtml = render(<Email />)
+
       const mailOptions = {
         from: data.email.user,
         to: email,
         subject: "Conheça nosso sistema 🚀",
-        text: "test"
+        html: emailHtml
       }
 
       try {
